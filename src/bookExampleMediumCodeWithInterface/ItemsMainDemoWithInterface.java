@@ -16,7 +16,7 @@ public class ItemsMainDemoWithInterface {
 
         mainDisplay.display();
         while (scanner.hasNextLine()) {
-            mainDisplay.userInput(scanner);
+            mainDisplay.userInput(scanner, registeredItems);
         }
     }
 

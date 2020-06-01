@@ -18,7 +18,8 @@ public class MainDisplayImpl implements IMainDisplay {
     }
 
     @Override
-    public void userInput(Scanner scanner) {
+    public void userInput(Scanner scanner, Map<String, String> registeredItems) {
+        System.out.println("This is in main display implementation");
         // Store the user input
         String userChoice = scanner.nextLine();
 
@@ -27,10 +28,12 @@ public class MainDisplayImpl implements IMainDisplay {
             case "b":
                 // Display the main message
                 books.displayMessage();
+                books.userInput(scanner, registeredItems);
                 break;
             case "s":
                 // Display the main message
                 movie.displayMessage();
+                movie.userInput(scanner, registeredItems);
                 break;
             case "q":
                 // Quit the program

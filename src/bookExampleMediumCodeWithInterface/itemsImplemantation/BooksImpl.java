@@ -61,6 +61,7 @@ public class BooksImpl implements IItems {
     // Override the userInput in IItems class
     @Override
     public void userInput(Scanner scanner, Map<String, String> registerItems) {
+        System.out.println("This is in book display implementation");
         // Store the user input
         String userChoice = scanner.nextLine();
 
