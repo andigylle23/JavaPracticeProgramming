@@ -1,10 +1,12 @@
-package bookExampleMediumCodeWithInterface.items;
+package bookExampleMediumCodeWithInterface.itemsImplemantation;
+
+import bookExampleMediumCodeWithInterface.items.IItems;
 
 import java.util.Map;
 import java.util.Scanner;
 
 // Concrete class for Movie and implement the IItems items
-public class MovieImpl implements IItems{
+public class MovieImpl implements IItems {
 
     // Register movie items
     @Override
