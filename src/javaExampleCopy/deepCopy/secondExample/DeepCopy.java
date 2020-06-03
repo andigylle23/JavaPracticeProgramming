@@ -5,6 +5,7 @@ import java.util.Arrays;
 public class DeepCopy {
     private int[] data;
 
+    // Make a deep copy of values
     public DeepCopy(int[] values) {
         data = new int[values.length];
 
@@ -13,6 +14,7 @@ public class DeepCopy {
         }
     }
 
+    // Display the values
     public void showData() {
         System.out.println(Arrays.toString(data));
     }
