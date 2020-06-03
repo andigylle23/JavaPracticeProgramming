@@ -47,12 +47,20 @@ public class DuplicatesStreamExamples {
 
             System.out.print("Please input a name: ");
             String name = scanner.nextLine();
-            arrayList.add(name);
+
+            if(arrayList.contains(name)) {
+                System.out.println("This name already exists");
+            } else {
+                arrayList.add(name);
+            }
         return arrayList;
     }
 
-    public static ArrayList<String> getNameList(ArrayList<String> arrayList) {
-        return arrayList;
+    public static void getNameList(ArrayList<String> arrayList) {
+        System.out.println("Here are the list::::");
+        for(String names: arrayList) {
+            System.out.println(names);
+        }
     }
 
 
